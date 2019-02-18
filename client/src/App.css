@@ -1,5 +1,33 @@
-.remove-btn {
+body {
+    background: linear-gradient(0deg, #2f3a56 10%, #e2474b);
+    color: #2f3a56;
+    height: 100vh;
+    font-family: 'Raleway', sans-serif;
+}
+
+.flexContainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.flexItem:first-child {
+    align-self: center;
+}
+
+.addItem {
+    background-color: transparent;
+    border: 1px solid #fff;
+    margin-bottom: 20px;
+}
+
+.removeItem {
     margin-right: 0.5rem;
+}
+
+.checkedItem {
+    text-decoration: line-through !important;
+    text-decoration-color: #e2474b;
 }
 
 .fade-enter {

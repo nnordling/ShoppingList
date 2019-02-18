@@ -19,7 +19,7 @@ class App extends Component {
       <Provider store={store}>
       <div className="App">
         <AppNavbar/>
-        <Container>
+        <Container className="flexContainer">
           <ItemModal/>
           <ShoppingList/>
         </Container>

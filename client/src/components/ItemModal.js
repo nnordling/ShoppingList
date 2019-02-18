@@ -39,10 +39,10 @@ class ItemModal extends Component {
 
   render() {
     return (
-      <div>
-        <Button color="dark" style={{marginBottom: '2rem'}} onClick={this.toggle}>
-          Add Item
-        </Button>
+      <div className="flexItem">
+          <Button className="addItem" onClick={this.toggle}>
+            Add Item
+          </Button>
         <Modal isOpen={this.state.modal} toggle={this.toggle}>
           <ModalHeader toggle={this.toggle}>
             Add to shopping list
@@ -51,9 +51,7 @@ class ItemModal extends Component {
             <Form onSubmit={this.onSubmit}>
               <FormGroup>
                 <Label for="item">Item</Label>
-                <Input type="name" name="name" id="item" placeholder="Add item" onChange={this.onChange}>
-
-                </Input>
+                <Input type="name" name="name" id="item" placeholder="Add item" onChange={this.onChange} />
                 <Button color="dark" style={{marginTop:"2rem"}} block>
                   Add Item
                 </Button>
